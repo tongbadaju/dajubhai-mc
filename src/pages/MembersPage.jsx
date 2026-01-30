@@ -1,15 +1,49 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { members } from '../data'
 
+function MemberCard({ member, index }) {
+  return (
+    <div 
+      key={member.id} 
+      className={`member-card-full ${member.featured ? 'leadership' : ''}`}
+      style={{ animationDelay: `${index * 0.05}s` }}
+    >
+      <div className="member-photo-large" style={member.photo ? { backgroundImage: `url(${member.photo})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
+        {!member.photo && '👤'}
+        <div className="member-designation-badge">{member.role}</div>
+      </div>
+      <div className="member-info-full">
+        <h3 className="member-name">{member.name}</h3>
+        
+        {member.bike && (
+          <div className="member-details">
+            <div className="member-detail">
+              <span className="detail-label">Ride</span>
+              <span className="detail-value">{member.bike}</span>
+            </div>
+          </div>
+        )}
+        
+        {member.quote && <p className="member-quote-full">"{member.quote}"</p>}
+      </div>
+    </div>
+  )
+}
+
 function MembersPage() {
   const [filter, setFilter] = useState('all')
+  const membersRef = useRef(null)
   
-  const leadership = members.filter(m => m.featured)
-  const coreMembers = members.filter(m => !m.featured)
-  
-  const displayMembers = filter === 'leadership' ? leadership : 
-                         filter === 'core' ? coreMembers : members
+  const riders = members.filter(m => m.role !== 'Advisor')
+  const advisors = members.filter(m => m.role === 'Advisor')
+
+  const handleTabChange = (newFilter) => {
+    setFilter(newFilter)
+    setTimeout(() => {
+      membersRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 50)
+  }
 
   return (
     <div className="page members-page">
@@ -23,7 +57,7 @@ function MembersPage() {
             Back to Home
           </Link>
           <h1 className="page-title">Our Brotherhood</h1>
-          <p className="page-subtitle">15 riders united by passion, bonded by the road</p>
+          <p className="page-subtitle">{members.length} members united by passion</p>
         </div>
       </section>
 
@@ -33,60 +67,58 @@ function MembersPage() {
           <div className="filter-tabs">
             <button 
               className={`filter-tab ${filter === 'all' ? 'active' : ''}`}
-              onClick={() => setFilter('all')}
+              onClick={() => handleTabChange('all')}
             >
-              All Members ({members.length})
+              All ({members.length})
             </button>
             <button 
-              className={`filter-tab ${filter === 'leadership' ? 'active' : ''}`}
-              onClick={() => setFilter('leadership')}
+              className={`filter-tab ${filter === 'riders' ? 'active' : ''}`}
+              onClick={() => handleTabChange('riders')}
             >
-              Leadership ({leadership.length})
+              Riders ({riders.length})
             </button>
             <button 
-              className={`filter-tab ${filter === 'core' ? 'active' : ''}`}
-              onClick={() => setFilter('core')}
+              className={`filter-tab ${filter === 'advisors' ? 'active' : ''}`}
+              onClick={() => handleTabChange('advisors')}
             >
-              Core Members ({coreMembers.length})
+              Advisors ({advisors.length})
             </button>
           </div>
         </div>
       </section>
 
       {/* Members Grid */}
-      <section className="section">
+      <section className="section" ref={membersRef}>
         <div className="container">
-          <div className="members-page-grid">
-            {displayMembers.map((member, index) => (
-              <div 
-                key={member.id} 
-                className={`member-card-full ${member.featured ? 'leadership' : ''}`}
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
-                <div className="member-photo-large">
-                  👤
-                  <div className="member-designation-badge">{member.designation}</div>
-                </div>
-                <div className="member-info-full">
-                  <h3 className="member-name">{member.name}</h3>
-                  <p className="member-role">{member.role}</p>
-                  
-                  <div className="member-details">
-                    <div className="member-detail">
-                      <span className="detail-label">Rides</span>
-                      <span className="detail-value">🏍️ {member.bike}</span>
-                    </div>
-                    <div className="member-detail">
-                      <span className="detail-label">Experience</span>
-                      <span className="detail-value">⏱️ {member.experience}</span>
-                    </div>
-                  </div>
-                  
-                  <p className="member-quote-full">"{member.quote}"</p>
+          {filter === 'all' ? (
+            <>
+              {/* Riders Section */}
+              <div className="members-section">
+                <h3 className="members-section-title">Riders</h3>
+                <div className="members-page-grid">
+                  {riders.map((member, index) => (
+                    <MemberCard key={member.id} member={member} index={index} />
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
+              
+              {/* Advisors Section */}
+              <div className="members-section">
+                <h3 className="members-section-title">🎖️ Advisors</h3>
+                <div className="members-page-grid">
+                  {advisors.map((member, index) => (
+                    <MemberCard key={member.id} member={member} index={index} />
+                  ))}
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className="members-page-grid">
+              {(filter === 'riders' ? riders : advisors).map((member, index) => (
+                <MemberCard key={member.id} member={member} index={index} />
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

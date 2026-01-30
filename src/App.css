@@ -978,9 +978,10 @@
   background: var(--charcoal);
   padding: var(--space-md) 0;
   position: sticky;
-  top: 70px;
+  top: 69px;
   z-index: 100;
   border-bottom: 1px solid var(--dark-gray);
+  box-shadow: 0 -20px 0 0 var(--charcoal);
 }
 
 .filter-tabs {
@@ -1041,6 +1042,19 @@
 }
 
 /* -------------------- MEMBERS PAGE -------------------- */
+.members-section {
+  margin-bottom: var(--space-xl);
+}
+
+.members-section-title {
+  font-size: 1.5rem;
+  color: var(--off-white);
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
 .members-page-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1379,6 +1393,11 @@
 }
 
 @media (max-width: 768px) {
+  /* Reduce overall font sizes for mobile */
+  body {
+    font-size: 14px;
+  }
+  
   .members-page-grid {
     grid-template-columns: 1fr;
   }
@@ -1389,11 +1408,31 @@
   
   .filter-tab {
     padding: var(--space-xs) var(--space-sm);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
   
   .page-hero {
     padding: var(--space-2xl) 0 var(--space-xl);
+  }
+  
+  .page-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+  
+  .page-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .member-name {
+    font-size: 1rem;
+  }
+  
+  .member-quote-full {
+    font-size: 0.8rem;
+  }
+  
+  .members-section-title {
+    font-size: 1.2rem;
   }
   
   .agreement-box {

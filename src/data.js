@@ -24,7 +24,7 @@ export const socialLinks = {
 export const rides = [
   {
     id: 1,
-    title: "Dzuluk Circuit",
+    title: "The Zig-Zag",
     date: "October 2024",
     location: "East Sikkim",
     distance: "267 km",
@@ -35,7 +35,7 @@ export const rides = [
   },
   {
     id: 2,
-    title: "North Sikkim Ride",
+    title: "Oxygen Is Optional",
     date: "April 2026",
     location: "North Sikkim",
     distance: "688 km",
@@ -50,190 +50,218 @@ export const members = [
   // Leadership
   {
     id: 1,
-    name: "Rajesh Sharma",
-    designation: "President",
-    role: "Founder",
+    name: "Premanand Rai",
+    role: "Chief",
     bike: "Royal Enfield Himalayan 450",
-    experience: "12 years",
-    photo: null,
+    photo: "/members/premanand-rai.jpg",
     quote: "The road is my teacher, the bike is my companion.",
     featured: true
   },
   {
     id: 2,
-    name: "Vikram Singh",
-    designation: "Vice President",
-    role: "Co-Founder",
+    name: "Samir Bhujel",
+    role: "Secretary",
     bike: "KTM 390 Adventure",
-    experience: "8 years",
-    photo: null,
+    photo: "/members/samir-bhujel.jpg",
     quote: "Every ride is a new story waiting to be told.",
     featured: true
   },
   {
     id: 3,
-    name: "Arjun Patel",
-    designation: "Road Captain",
-    role: "Lead Navigator",
+    name: "Sahil Rai",
+    role: "Treasurer",
     bike: "BMW G 310 GS",
-    experience: "10 years",
-    photo: null,
+    photo: "/members/sahil-rai.jpg",
     quote: "I don't need GPS, I follow my instincts.",
     featured: true
   },
   {
     id: 4,
-    name: "Suresh Kumar",
-    designation: "Treasurer",
-    role: "Finance Head",
-    bike: "Kawasaki Versys 650",
-    experience: "6 years",
-    photo: null,
+    name: "Niten Rai",
+    role: "Media Head",
+    bike: "Royal Enfield Hunter 350",
+    photo: "/members/niten-rai.jpg",
     quote: "Riding is an investment in happiness.",
     featured: true
   },
   {
     id: 5,
-    name: "Amit Verma",
-    designation: "Tech Lead",
-    role: "Mechanic Expert",
-    bike: "Triumph Tiger 850 Sport",
-    experience: "15 years",
-    photo: null,
+    name: "Tushar Rai",
+    role: "Media Head",
+    bike: "Royal Enfield Himalayan 411",
+    photo: "/members/tushar-rai.jpg",
     quote: "Every machine has a soul, you just need to listen.",
     featured: true
   },
   {
     id: 6,
-    name: "Deepak Joshi",
-    designation: "Media Head",
-    role: "Photographer",
-    bike: "Suzuki V-Strom 650",
-    experience: "5 years",
-    photo: null,
+    name: "Anmol Rai",
+    role: "Media Head",
+    bike: "Royal Enfield Hunter 350",
+    photo: "/members/anmol-rai.jpg",
     quote: "Capturing moments at 100 km/h.",
     featured: true
   },
-  // Core Members
   {
     id: 7,
-    name: "Rahul Mehta",
-    designation: "Safety Marshal",
-    role: "First Aid Expert",
-    bike: "Royal Enfield Interceptor 650",
-    experience: "7 years",
-    photo: null,
-    quote: "Safety first, adventure always.",
-    featured: false
+    name: "Uttam Sharma",
+    role: "Community Manager",
+    bike: "Yezdi Adventure",
+    photo: "/members/uttam-sharma.jpg",
+    quote: "No rider left behind.",
+    featured: true
   },
   {
     id: 8,
-    name: "Karan Thakur",
-    designation: "Tail Gunner",
-    role: "Rear Guard",
-    bike: "Honda CB500X",
-    experience: "4 years",
-    photo: null,
-    quote: "No rider left behind.",
-    featured: false
+    name: "Swadhin Rai",
+    role: "Community Manager",
+    bike: null,
+    photo: "/members/swadhin-rai.jpg",
+    quote: "Safety first, adventure always.",
+    featured: true
   },
+  // Members
   {
     id: 9,
-    name: "Nikhil Rao",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "Yamaha MT-15",
-    experience: "3 years",
-    photo: null,
-    quote: "Small bike, big dreams.",
+    name: "Dishant Pradhan",
+    role: "Member",
+    bike: "Husqvarna Svartpilen 250",
+    photo: "/members/dishant-pradhan.jpg",
+    quote: "The road less traveled is where legends are made.",
+    featured: true
+  },
+  {
+    id: 10,
+    name: "Jeevesh Rai",
+    role: "Member",
+    bike: "Royal Enfield Hunter 350",
+    photo: "/members/jeevesh-rai.jpg",
+    quote: "Every ride is a chance to find yourself.",
+    featured: true
+  },
+  {
+    id: 11,
+    name: "Abhijeet Yonzon",
+    role: "Member",
+    bike: "Royal Enfield Himalayan 411",
+    photo: "/members/abhijeet-yonzon.jpg",
+    quote: "Mountains call, and I must ride.",
+    featured: true
+  },
+  {
+    id: 12,
+    name: "Dewan Chettri",
+    role: "Member",
+    bike: null,
+    photo: "/members/dewan-chettri.jpg",
+    quote: "Brotherhood first, everything else follows.",
+    featured: true
+  },
+  {
+    id: 13,
+    name: "Welson Gurung",
+    role: "Member",
+    bike: "Royal Enfield Himalayan 411",
+    photo: "/members/welson-gurung.jpg",
+    quote: "Life begins where the road curves.",
+    featured: true
+  },
+  {
+    id: 14,
+    name: "Wangdi Lepcha",
+    role: "Member",
+    bike: "Yamaha R15M",
+    photo: "/members/wangdi-lepcha.jpg",
+    quote: "Speed is temporary, the thrill is forever.",
+    featured: true
+  },
+  {
+    id: 15,
+    name: "Puran Rai",
+    role: "Member",
+    bike: "Yamaha FZ-15",
+    photo: "/members/puran-rai.jpg",
+    quote: "Two wheels, one passion.",
+    featured: true
+  },
+  {
+    id: 16,
+    name: "Jason Lepcha",
+    role: "Member",
+    bike: "Royal Enfield Himalayan 411",
+    photo: "/members/jason-lepcha.jpg",
+    quote: "Adventure awaits around every bend.",
+    featured: true
+  },
+  {
+    id: 17,
+    name: "Sumiran Pradhan",
+    role: "Member",
+    bike: "Royal Enfield Guerrilla 450",
+    photo: "/members/sumiran-pradhan.jpg",
+    quote: "Born to be wild, destined to ride.",
+    featured: true
+  },
+  {
+    id: 18,
+    name: "Adarsh Rai",
+    role: "Member",
+    bike: null,
+    photo: "/members/adarsh-rai.jpg",
+    quote: "The journey matters more than the destination.",
+    featured: true
+  },
+  {
+    id: 19,
+    name: "Anuj Rai",
+    role: "Member",
+    bike: null,
+    photo: "/members/anuj-rai.jpg",
+    quote: "Riding with brothers, chasing horizons.",
+    featured: true
+  },
+  {
+    id: 20,
+    name: "Ashis Mukhia",
+    role: "Member",
+    bike: null,
+    photo: "/members/ashis-mukhia.jpg",
+    quote: "Freedom has two wheels.",
+    featured: true
+  },
+  {
+    id: 21,
+    name: "Tashi Bhutia",
+    role: "Member",
+    bike: "Royal Enfield Hunter 350",
+    photo: "/members/tashi-bhutia.jpg",
+    quote: "Ride together, stay together.",
+    featured: true
+  },
+
+  // Advisors
+  {
+    id: 9,
+    name: "Sudhir Chettri",
+    role: "Advisor",
+    bike: null,
+    photo: "/members/sudhir-chettri.jpg",
     featured: false
   },
   {
     id: 10,
-    name: "Pradeep Singh",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "Bajaj Dominar 400",
-    experience: "5 years",
-    photo: null,
-    quote: "Dominating every road I take.",
+    name: "Andrew Lepcha",
+    role: "Advisor",
+    bike: null,
+    photo: "/members/andrew-lepcha.jpg",
     featured: false
   },
   {
     id: 11,
-    name: "Manish Gupta",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "TVS Apache RR 310",
-    experience: "4 years",
-    photo: null,
-    quote: "Track skills, street thrills.",
-    featured: false
-  },
-  {
-    id: 12,
-    name: "Ravi Shankar",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "Royal Enfield Classic 350",
-    experience: "6 years",
-    photo: null,
-    quote: "The thump speaks for itself.",
-    featured: false
-  },
-  {
-    id: 13,
-    name: "Ajay Krishnan",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "Jawa 42",
-    experience: "3 years",
-    photo: null,
-    quote: "Reviving legends, one ride at a time.",
-    featured: false
-  },
-  {
-    id: 14,
-    name: "Sanjay Deshmukh",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "Husqvarna Svartpilen 250",
-    experience: "2 years",
-    photo: null,
-    quote: "Swedish design, Indian heart.",
-    featured: false
-  },
-  {
-    id: 15,
-    name: "Vishal Nair",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "Hero XPulse 200 4V",
-    experience: "3 years",
-    photo: null,
-    quote: "Off-road is my playground.",
-    featured: false
-  },
-  {
-    id: 16,
-    name: "Rohit Kapoor",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "KTM Duke 250",
-    experience: "4 years",
-    photo: null,
-    quote: "Orange is the new black.",
-    featured: false
-  },
-  {
-    id: 17,
-    name: "Aditya Sharma",
-    designation: "Member",
-    role: "Core Rider",
-    bike: "Suzuki Gixxer 250",
-    experience: "2 years",
-    photo: null,
-    quote: "Smooth power, endless miles.",
+    name: "Mahesh Pradhan",
+    role: "Advisor",
+    bike: null,
+    photo: "/members/mahesh-pradhan.jpg",
     featured: false
   }
 ];
@@ -358,9 +386,9 @@ export const gallery = [
 ];
 
 export const stats = [
-  { number: "15+", label: "Active Members" },
-  { number: "1,000+", label: "Kilometers Ridden" },
-  { number: "5+", label: "Rides Completed" },
+  { number: "20+", label: "Members" },
+  { number: "2", label: "Epic Rides" },
+  { number: "1000+", label: "KM Covered" },
   { number: "1", label: "Year of Brotherhood" }
 ];
 

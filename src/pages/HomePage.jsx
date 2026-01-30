@@ -243,16 +243,17 @@ function MembersPreview() {
         <div className="members-grid">
           {featuredMembers.map((member) => (
             <div key={member.id} className="member-card">
-              <div className="member-photo">
-                👤
-                <div className="member-designation-badge">{member.designation}</div>
+              <div className="member-photo" style={member.photo ? { backgroundImage: `url(${member.photo})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
+                {!member.photo && '👤'}
+                <div className="member-designation-badge">{member.role}</div>
               </div>
               <div className="member-info">
                 <h4 className="member-name">{member.name}</h4>
-                <p className="member-role">{member.role}</p>
-                <div className="member-bike">
-                  🏍️ {member.bike}
-                </div>
+                {member.bike && (
+                  <div className="member-bike">
+                    {member.bike}
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -289,7 +290,7 @@ function RulebookPreview() {
         </div>
         <div className="section-cta">
           <Link to="/rulebook" className="btn btn-outline">
-            View Full Rulebook ({rules.length} Rules) <ArrowRight />
+            View Full Rulebook <ArrowRight />
           </Link>
         </div>
       </div>
