@@ -6,14 +6,8 @@ export const clubInfo = {
   tagline: "Brotherhood on Two Wheels",
   established: 2025,
   logo: "/logo.svg",
-  description: "We are a brotherhood of passionate riders united by our love for motorcycles and the open road. From scenic mountain passes to challenging terrains, we ride together as family.",
-  mission: "To foster a community of responsible riders who share the thrill of adventure, promote road safety, and create lasting bonds through the spirit of motorcycling.",
-  values: [
-    "Brotherhood & Respect",
-    "Safety First",
-    "Adventure & Freedom",
-    "Community & Support"
-  ]
+  description: "\"Daju Bhai\" means \"Brothers\" in Nepali — a bond that goes beyond blood. We are a brotherhood of passionate riders united by our love for motorcycles and the open road. From scenic mountain passes to challenging terrains, we ride together as family.",
+  mission: "To foster a community of responsible riders who share the thrill of adventure, promote road safety, and create lasting bonds through the spirit of motorcycling."
 };
 
 export const socialLinks = {
@@ -30,7 +24,7 @@ export const rides = [
     distance: "267 km",
     duration: "2 Days",
     description: "We conquered the legendary 32 hairpin bends of Zuluk, carving through history on the ancient Silk Road. From the misty heights of Thambi View Point to the serene tundra of Gnathang Valley, this ride was pure soul-searching on two wheels.",
-    image: "/rides/dzuluk.jpg",
+    image: "/gallery/8.avif",
     featured: false
   },
   {
@@ -41,7 +35,7 @@ export const rides = [
     distance: "688 km",
     duration: "3 Days",
     description: "Our most ambitious expedition yet. We pushed our limits to reach the sacred waters of Gurudongmar Lake at 17,800 ft and braved the freezing winds of Zero Point. An unforgettable journey through the heart of the high Himalayas.",
-    image: "/rides/north-sikkim.jpg",
+    image: "/gallery/1.avif",
     featured: true
   },
 ];
@@ -61,7 +55,7 @@ export const members = [
     id: 2,
     name: "Samir Bhujel",
     role: "Secretary",
-    bike: "KTM 390 Adventure",
+    bike: "Hero Xpulse 200 4V",
     photo: "/members/samir-bhujel.jpg",
     quote: "Every ride is a new story waiting to be told.",
     featured: true
@@ -70,7 +64,7 @@ export const members = [
     id: 3,
     name: "Sahil Rai",
     role: "Treasurer",
-    bike: "BMW G 310 GS",
+    bike: "Yamaha MT-15",
     photo: "/members/sahil-rai.jpg",
     quote: "I don't need GPS, I follow my instincts.",
     featured: true
@@ -177,11 +171,11 @@ export const members = [
   },
   {
     id: 15,
-    name: "Puran Rai",
+    name: "Tashi Bhutia",
     role: "Member",
-    bike: "Yamaha FZ-15",
-    photo: "/members/puran-rai.jpg",
-    quote: "Two wheels, one passion.",
+    bike: "Royal Enfield Hunter 350",
+    photo: "/members/tashi-bhutia.jpg",
+    quote: "Ride together, stay together.",
     featured: true
   },
   {
@@ -215,33 +209,15 @@ export const members = [
     id: 19,
     name: "Anuj Rai",
     role: "Member",
-    bike: null,
+    bike: "Yezdi Adventure",
     photo: "/members/anuj-rai.jpg",
     quote: "Riding with brothers, chasing horizons.",
-    featured: true
-  },
-  {
-    id: 20,
-    name: "Ashis Mukhia",
-    role: "Member",
-    bike: null,
-    photo: "/members/ashis-mukhia.jpg",
-    quote: "Freedom has two wheels.",
-    featured: true
-  },
-  {
-    id: 21,
-    name: "Tashi Bhutia",
-    role: "Member",
-    bike: "Royal Enfield Hunter 350",
-    photo: "/members/tashi-bhutia.jpg",
-    quote: "Ride together, stay together.",
     featured: true
   },
 
   // Advisors
   {
-    id: 9,
+    id: 20,
     name: "Sudhir Chettri",
     role: "Advisor",
     bike: null,
@@ -249,7 +225,7 @@ export const members = [
     featured: false
   },
   {
-    id: 10,
+    id: 21,
     name: "Andrew Lepcha",
     role: "Advisor",
     bike: null,
@@ -257,7 +233,7 @@ export const members = [
     featured: false
   },
   {
-    id: 11,
+    id: 22,
     name: "Mahesh Pradhan",
     role: "Advisor",
     bike: null,
@@ -375,14 +351,18 @@ export const rules = [
 ];
 
 export const gallery = [
-  { id: 1, title: "Formation Ride", category: "rides" },
-  { id: 2, title: "Mountain Pass", category: "scenic" },
-  { id: 3, title: "Pit Stop", category: "lifestyle" },
-  { id: 4, title: "Sunset Silhouette", category: "scenic" },
-  { id: 5, title: "Group Photo", category: "members" },
-  { id: 6, title: "Night Ride", category: "rides" },
-  { id: 7, title: "Bike Lineup", category: "bikes" },
-  { id: 8, title: "Chai Break", category: "lifestyle" }
+  "/gallery/1.avif",
+  "/gallery/2.avif",
+  "/gallery/3.avif",
+  "/gallery/4.avif",
+  "/gallery/5.avif",
+  "/gallery/6.avif",
+  "/gallery/7.avif",
+  "/gallery/8.avif",
+  "/gallery/9.avif",
+  "/gallery/10.avif",
+  "/gallery/11.avif",
+  "/gallery/12.avif"
 ];
 
 export const stats = [
@@ -401,27 +381,27 @@ export const contactInfo = {
 export const heroSlides = [
   {
     id: 1,
-    image: "/gallery/1.jpg",
+    image: "/gallery/1.avif",
     caption: "Born To Ride — Live To Explore"
   },
   {
     id: 2,
-    image: "/gallery/2.jpg",
+    image: "/gallery/12.avif",
     caption: "Chasing Horizons — Finding Freedom"
   },
   {
     id: 3,
-    image: "/gallery/3.jpg",
+    image: "/gallery/5.avif",
     caption: "Brotherhood — United We Ride"
   },
   {
     id: 4,
-    image: "/gallery/4.jpg",
+    image: "/gallery/2.avif",
     caption: "The Journey Continues"
   },
   {
     id: 5,
-    image: "/gallery/5.jpg",
+    image: "/gallery/8.avif",
     caption: "Ride With Pride"
   }
 ];

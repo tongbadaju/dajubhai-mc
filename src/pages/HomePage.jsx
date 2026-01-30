@@ -4,7 +4,7 @@ import { clubInfo, socialLinks, rides, members, rules, gallery, stats, contactIn
 
 // Icons
 const MapPin = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
     <circle cx="12" cy="10" r="3" />
   </svg>
@@ -88,7 +88,7 @@ function Hero() {
 
       {/* Main Content */}
       <div className="hero-content">
-        <h1 className="hero-title">{clubInfo.name}</h1>
+        <h1 className="hero-title">{clubInfo.fullName}</h1>
         <p className="hero-tagline">{clubInfo.tagline}</p>
         <p className="hero-established">ESTD {clubInfo.established}</p>
         <div className="hero-cta">
@@ -151,11 +151,6 @@ function About() {
             <h3>Our Story</h3>
             <p>{clubInfo.description}</p>
             <p>{clubInfo.mission}</p>
-            <div className="about-values">
-              {clubInfo.values.map((value, index) => (
-                <div key={index} className="value-item">{value}</div>
-              ))}
-            </div>
           </div>
           <div className="about-image">
             <img src={clubInfo.logo} alt={clubInfo.fullName} className="about-logo-img" />
@@ -176,12 +171,9 @@ function Gallery() {
           <p className="section-subtitle">Moments captured from our epic journeys</p>
         </div>
         <div className="gallery-grid">
-          {gallery.map((item) => (
-            <div key={item.id} className="gallery-item">
-              <div className="gallery-placeholder">📸</div>
-              <div className="gallery-overlay">
-                <span>{item.title}</span>
-              </div>
+          {gallery.map((image, index) => (
+            <div key={index} className="gallery-item">
+              <img src={image} alt={`Gallery ${index + 1}`} />
             </div>
           ))}
         </div>
@@ -189,6 +181,7 @@ function Gallery() {
     </section>
   )
 }
+
 
 // Rides Component
 function Rides() {
@@ -202,7 +195,7 @@ function Rides() {
         <div className="rides-grid">
           {rides.map((ride) => (
             <div key={ride.id} className={`ride-card ${ride.featured ? 'featured' : ''}`}>
-              <div className="ride-image" style={ride.image ? { backgroundImage: `url(${ride.image})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
+              <div className="ride-image" style={ride.image ? { backgroundImage: `url(${ride.image})`, backgroundSize: 'cover', backgroundPosition: 'bottom' } : {}}>
                 {!ride.image && <div className="ride-image-placeholder">🏔️</div>}
                 {ride.featured && <span className="ride-badge">Featured</span>}
               </div>
