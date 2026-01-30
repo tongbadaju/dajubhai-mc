@@ -199,7 +199,7 @@ a:hover {
   color: var(--silver);
   font-size: 1.1rem;
   max-width: 600px;
-  margin: var(--space-md) auto 0;
+  margin: var(--space-xs) auto 0;
 }
 
 /* Cards */

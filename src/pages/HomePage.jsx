@@ -224,7 +224,7 @@ function Rides() {
 
 // Members Preview Component (for homepage)
 function MembersPreview() {
-  const featuredMembers = members.filter(m => m.featured).slice(0, 6)
+  const featuredMembers = members.filter(m => m.featured).slice(0, 3)
   
   return (
     <section className="members section" id="members">

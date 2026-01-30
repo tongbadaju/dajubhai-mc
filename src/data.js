@@ -114,42 +114,42 @@ export const members = [
     quote: "Safety first, adventure always.",
     featured: true
   },
-  // Members
   {
     id: 9,
+    name: "Abhijeet Yonzon",
+    role: "Tech Lead",
+    bike: "Royal Enfield Himalayan 411",
+    photo: "/members/abhijeet-yonzon.jpg",
+    quote: "Mountains call, and I must ride.",
+    featured: false
+  },
+  {
+    id: 10,
+    name: "Dewan Chettri",
+    role: "Tech Lead",
+    bike: null,
+    photo: "/members/dewan-chettri.jpg",
+    quote: "Brotherhood first, everything else follows.",
+    featured: false
+  },
+  // Members
+  {
+    id: 11,
     name: "Dishant Pradhan",
     role: "Member",
     bike: "Husqvarna Svartpilen 250",
     photo: "/members/dishant-pradhan.jpg",
     quote: "The road less traveled is where legends are made.",
-    featured: true
+    featured: false
   },
   {
-    id: 10,
+    id: 12,
     name: "Jeevesh Rai",
     role: "Member",
     bike: "Royal Enfield Hunter 350",
     photo: "/members/jeevesh-rai.jpg",
     quote: "Every ride is a chance to find yourself.",
-    featured: true
-  },
-  {
-    id: 11,
-    name: "Abhijeet Yonzon",
-    role: "Member",
-    bike: "Royal Enfield Himalayan 411",
-    photo: "/members/abhijeet-yonzon.jpg",
-    quote: "Mountains call, and I must ride.",
-    featured: true
-  },
-  {
-    id: 12,
-    name: "Dewan Chettri",
-    role: "Member",
-    bike: null,
-    photo: "/members/dewan-chettri.jpg",
-    quote: "Brotherhood first, everything else follows.",
-    featured: true
+    featured: false
   },
   {
     id: 13,
@@ -158,7 +158,7 @@ export const members = [
     bike: "Royal Enfield Himalayan 411",
     photo: "/members/welson-gurung.jpg",
     quote: "Life begins where the road curves.",
-    featured: true
+    featured: false
   },
   {
     id: 14,
@@ -167,7 +167,7 @@ export const members = [
     bike: "Yamaha R15M",
     photo: "/members/wangdi-lepcha.jpg",
     quote: "Speed is temporary, the thrill is forever.",
-    featured: true
+    featured: false
   },
   {
     id: 15,
@@ -176,7 +176,7 @@ export const members = [
     bike: "Royal Enfield Hunter 350",
     photo: "/members/tashi-bhutia.jpg",
     quote: "Ride together, stay together.",
-    featured: true
+    featured: false
   },
   {
     id: 16,
@@ -185,7 +185,7 @@ export const members = [
     bike: "Royal Enfield Himalayan 411",
     photo: "/members/jason-lepcha.jpg",
     quote: "Adventure awaits around every bend.",
-    featured: true
+    featured: false
   },
   {
     id: 17,
@@ -194,7 +194,7 @@ export const members = [
     bike: "Royal Enfield Guerrilla 450",
     photo: "/members/sumiran-pradhan.jpg",
     quote: "Born to be wild, destined to ride.",
-    featured: true
+    featured: false
   },
   {
     id: 18,
@@ -203,7 +203,7 @@ export const members = [
     bike: null,
     photo: "/members/adarsh-rai.jpg",
     quote: "The journey matters more than the destination.",
-    featured: true
+    featured: false
   },
   {
     id: 19,
@@ -212,7 +212,7 @@ export const members = [
     bike: "Yezdi Adventure",
     photo: "/members/anuj-rai.jpg",
     quote: "Riding with brothers, chasing horizons.",
-    featured: true
+    featured: false
   },
 
   // Advisors
@@ -295,7 +295,7 @@ export const rules = [
   {
     id: 8,
     title: "Club Dues",
-    description: "Annual membership fees must be paid on time. Contributions to ride funds are mandatory for participation in group events.",
+    description: "Monthly membership fee of minimum ₹100 is mandatory to support club activities and events. Contributions to ride funds are separate.",
     icon: "💰",
     category: "Membership"
   },
@@ -374,7 +374,7 @@ export const stats = [
 
 export const contactInfo = {
   email: "dajubhaimotorcycleclub@gmail.com",
-  phone: "+91 89274 72155",
+  phone: "+91 6295 728 532",
   location: "Sikkim, India"
 };
 
