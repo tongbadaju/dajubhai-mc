@@ -20,7 +20,7 @@ export const rides = [
   {
     id: 1,
     title: "Oxygen Is Optional",
-    date: "April 2026",
+    date: "April 2025",
     location: "North Sikkim",
     distance: "696 km",
     duration: "3 Days",
@@ -159,7 +159,7 @@ export const members = [
     name: "Jeevesh Rai",
     role: "Member",
     bike: "Royal Enfield Hunter 350",
-    photo: "/members/jeevesh-rai.jpg",
+    photo: "/members/jeevesh-rai.avif",
     quote: "Every ride is a chance to find yourself.",
     featured: false
   },

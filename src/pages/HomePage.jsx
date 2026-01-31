@@ -188,6 +188,17 @@ function Gallery() {
 }
 
 
+// Helper function to parse "Month Year" format
+function parseMonthYear(dateString) {
+  const months = {
+    january: 0, february: 1, march: 2, april: 3, may: 4, june: 5,
+    july: 6, august: 7, september: 8, october: 9, november: 10, december: 11
+  };
+  const [month, year] = dateString.split(' ');
+  const monthIndex = months[month.toLowerCase()];
+  return new Date(parseInt(year), monthIndex);
+}
+
 // Rides Component
 function Rides() {
   return (
@@ -199,8 +210,13 @@ function Rides() {
         </div>
         <div className="rides-grid">
           {[...rides].sort((a, b) => {
-            const dateA = new Date(a.date);
-            const dateB = new Date(b.date);
+            // Featured rides first
+            if (a.featured !== b.featured) {
+              return b.featured ? 1 : -1;
+            }
+            // Then sort by date (newest first)
+            const dateA = parseMonthYear(a.date);
+            const dateB = parseMonthYear(b.date);
             return dateB - dateA;
           }).map((ride) => (
             <div key={ride.id} className={`ride-card ${ride.featured ? 'featured' : ''}`}>
