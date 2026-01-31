@@ -35,7 +35,7 @@ export const rides = [
     location: "East Sikkim",
     distance: "267 km",
     duration: "2 Days",
-    description: "A breathtaking ascent from Gangtok to the mystical Tsomgo Lake, climbing higher to Kupup and the rugged Gnathang Valley. We carved our way through the legendary Dzuluk loops—a ride that chased the clouds along the Old Silk Route.",
+    description: "A breathtaking ascent from Namchi to the mystical Tsomgo Lake, climbing higher to Kupup and the rugged Gnathang Valley. We carved our way through the legendary Dzuluk loops—a ride that chased the clouds along the Old Silk Route.",
     image: "/gallery/8.avif",
     featured: false
   },
@@ -59,7 +59,7 @@ export const members = [
     name: "Premanand Rai",
     role: "Chief",
     bike: "Royal Enfield Himalayan 450",
-    photo: "/members/premanand-rai.jpg",
+    photo: "/members/premanand-rai.avif",
     quote: "The road is my teacher, the bike is my companion.",
     featured: true
   },
@@ -77,7 +77,7 @@ export const members = [
     name: "Sahil Rai",
     role: "Treasurer",
     bike: "Yamaha MT-15",
-    photo: "/members/sahil-rai.jpg",
+    photo: "/members/sahil-rai.avif",
     quote: "I don't need GPS, I follow my instincts.",
     featured: true
   },
@@ -96,7 +96,7 @@ export const members = [
     role: "Media Head",
     bike: "Royal Enfield Himalayan 411",
     photo: "/members/tushar-rai.avif",
-    quote: "Every machine has a soul, you just need to listen.",
+    quote: "Bujhyo ni?",
     featured: true
   },
   {
@@ -105,7 +105,7 @@ export const members = [
     role: "Media Head",
     bike: "Royal Enfield Hunter 350",
     photo: "/members/anmol-rai.avif",
-    quote: "Capturing moments at 100 km/h.",
+    quote: "Small displacement, massive torque.",
     featured: true
   },
   {
@@ -122,7 +122,7 @@ export const members = [
     name: "Swadhin Rai",
     role: "Community Manager",
     bike: null,
-    photo: "/members/swadhin-rai.jpg",
+    photo: "/members/swadhin-rai.avif",
     quote: "Safety first, adventure always.",
     featured: true
   },
@@ -150,7 +150,7 @@ export const members = [
     name: "Dishant Pradhan",
     role: "Member",
     bike: "Husqvarna Svartpilen 250",
-    photo: "/members/dishant-pradhan.jpg",
+    photo: "/members/dishant-pradhan.avif",
     quote: "The road less traveled is where legends are made.",
     featured: false
   },
@@ -168,7 +168,7 @@ export const members = [
     name: "Welson Gurung",
     role: "Member",
     bike: "Royal Enfield Himalayan 411",
-    photo: "/members/welson-gurung.jpg",
+    photo: "/members/welson-gurung.avif",
     quote: "Life begins where the road curves.",
     featured: false
   },
@@ -194,7 +194,7 @@ export const members = [
     id: 16,
     name: "Jason Lepcha",
     role: "Member",
-    bike: "Royal Enfield Himalayan 411",
+    bike: "TVS Apache RR 310",
     photo: "/members/jason-lepcha.jpg",
     quote: "Adventure awaits around every bend.",
     featured: false
@@ -205,7 +205,7 @@ export const members = [
     role: "Member",
     bike: "Royal Enfield Guerrilla 450",
     photo: "/members/sumiran-pradhan.avif",
-    quote: "Born to be wild, destined to ride.",
+    quote: "Jum ride!",
     featured: false
   },
   {
@@ -213,7 +213,7 @@ export const members = [
     name: "Adarsh Rai",
     role: "Member",
     bike: null,
-    photo: "/members/adarsh-rai.jpg",
+    photo: "/members/adarsh-rai.avif",
     quote: "The journey matters more than the destination.",
     featured: false
   },
