@@ -186,7 +186,7 @@ export const members = [
     name: "Tashi Bhutia",
     role: "Member",
     bike: "Royal Enfield Hunter 350",
-    photo: "/members/tashi-bhutia.jpg",
+    photo: "/members/tashi-bhutia.avif",
     quote: "Ride together, stay together.",
     featured: false
   },
