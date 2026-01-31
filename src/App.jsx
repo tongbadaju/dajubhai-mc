@@ -61,7 +61,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <button className="navbar-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+        <button className={`navbar-toggle ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span></span>
           <span></span>
           <span></span>

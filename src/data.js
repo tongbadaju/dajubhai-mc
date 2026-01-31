@@ -7,7 +7,8 @@ export const clubInfo = {
   established: 2025,
   logo: "/logo.svg",
   description: "\"Daju Bhai\" means \"Brothers\" in Nepali — a bond that goes beyond blood. We are a brotherhood of passionate riders united by our love for motorcycles and the open road. From scenic mountain passes to challenging terrains, we ride together as family.",
-  mission: "To foster a community of responsible riders who share the thrill of adventure, promote road safety, and create lasting bonds through the spirit of motorcycling."
+  mission: "To foster a community of responsible riders who share the thrill of adventure, promote road safety, and create lasting bonds through the spirit of motorcycling.",
+  galleryUrl: "https://photos.app.goo.gl/g3p7MBuGSsYaj9Fe9/"
 };
 
 export const socialLinks = {
@@ -18,25 +19,36 @@ export const socialLinks = {
 export const rides = [
   {
     id: 1,
+    title: "Oxygen Is Optional",
+    date: "April 2026",
+    location: "North Sikkim",
+    distance: "696 km",
+    duration: "3 Days",
+    description: "The ultimate Himalayan circuit. From Namchi to Lachen and the sacred high-altitude Gurudongmar Lake. We looped back to Lachung, exploring the floral paradise of Yumthang Valley and pushing to the very end of the road at Zero Point.",
+    image: "/gallery/1.avif",
+    featured: true
+  },
+  {
+    id: 2,
     title: "The Zig-Zag",
     date: "October 2024",
     location: "East Sikkim",
     distance: "267 km",
     duration: "2 Days",
-    description: "We conquered the legendary 32 hairpin bends of Zuluk, carving through history on the ancient Silk Road. From the misty heights of Thambi View Point to the serene tundra of Gnathang Valley, this ride was pure soul-searching on two wheels.",
+    description: "A breathtaking ascent from Gangtok to the mystical Tsomgo Lake, climbing higher to Kupup and the rugged Gnathang Valley. We carved our way through the legendary Dzuluk loops—a ride that chased the clouds along the Old Silk Route.",
     image: "/gallery/8.avif",
     featured: false
   },
   {
-    id: 2,
-    title: "Oxygen Is Optional",
-    date: "April 2026",
-    location: "North Sikkim",
-    distance: "688 km",
-    duration: "3 Days",
-    description: "Our most ambitious expedition yet. We pushed our limits to reach the sacred waters of Gurudongmar Lake at 17,800 ft and braved the freezing winds of Zero Point. An unforgettable journey through the heart of the high Himalayas.",
-    image: "/gallery/1.avif",
-    featured: true
+    "id": 3,
+    "title": "The Go Sadam Community Run",
+    "date": "November 2025",
+    "location": "Sadam, South Sikkim",
+    "distance": "Short Ride",
+    "duration": "1 Day",
+    "description": "A purpose-driven expedition to promote the 'Go Sadam' initiative. Flagged off by the Area MLA, our club was honored to interact with the Zilla Adhakshya and the OSD to the Hon'ble CM, receiving recognition for our commitment to social causes and local advocacy.",
+    "image": "/gallery/13.avif",
+    "featured": false
   },
 ];
 
@@ -74,7 +86,7 @@ export const members = [
     name: "Niten Rai",
     role: "Media Head",
     bike: "Royal Enfield Hunter 350",
-    photo: "/members/niten-rai.jpg",
+    photo: "/members/niten-rai.avif",
     quote: "Riding is an investment in happiness.",
     featured: true
   },
@@ -83,7 +95,7 @@ export const members = [
     name: "Tushar Rai",
     role: "Media Head",
     bike: "Royal Enfield Himalayan 411",
-    photo: "/members/tushar-rai.jpg",
+    photo: "/members/tushar-rai.avif",
     quote: "Every machine has a soul, you just need to listen.",
     featured: true
   },
@@ -92,7 +104,7 @@ export const members = [
     name: "Anmol Rai",
     role: "Media Head",
     bike: "Royal Enfield Hunter 350",
-    photo: "/members/anmol-rai.jpg",
+    photo: "/members/anmol-rai.avif",
     quote: "Capturing moments at 100 km/h.",
     featured: true
   },
@@ -127,7 +139,7 @@ export const members = [
     id: 10,
     name: "Dewan Chettri",
     role: "Tech Lead",
-    bike: null,
+    bike: "Bajaj Dominar 400",
     photo: "/members/dewan-chettri.jpg",
     quote: "Brotherhood first, everything else follows.",
     featured: false
@@ -165,7 +177,7 @@ export const members = [
     name: "Wangdi Lepcha",
     role: "Member",
     bike: "Yamaha R15M",
-    photo: "/members/wangdi-lepcha.jpg",
+    photo: "/members/wangdi-lepcha.avif",
     quote: "Speed is temporary, the thrill is forever.",
     featured: false
   },
@@ -192,7 +204,7 @@ export const members = [
     name: "Sumiran Pradhan",
     role: "Member",
     bike: "Royal Enfield Guerrilla 450",
-    photo: "/members/sumiran-pradhan.jpg",
+    photo: "/members/sumiran-pradhan.avif",
     quote: "Born to be wild, destined to ride.",
     featured: false
   },
@@ -367,7 +379,7 @@ export const gallery = [
 
 export const stats = [
   { number: "20+", label: "Members" },
-  { number: "2", label: "Epic Rides" },
+  { number: "3", label: "Epic Rides" },
   { number: "1000+", label: "KM Covered" },
   { number: "1", label: "Year of Brotherhood" }
 ];

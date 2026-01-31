@@ -153,7 +153,7 @@ function About() {
             <p>{clubInfo.mission}</p>
           </div>
           <div className="about-image">
-            <img src={clubInfo.logo} alt={clubInfo.fullName} className="about-logo-img" />
+            <img src="/logo-shiny.png" alt={clubInfo.fullName} className="about-logo-img" />
           </div>
         </div>
       </div>
@@ -177,6 +177,11 @@ function Gallery() {
             </div>
           ))}
         </div>
+        <div className="section-cta">
+          <a href={clubInfo.galleryUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            Show All Photos <ArrowRight />
+          </a>
+        </div>
       </div>
     </section>
   )
@@ -193,7 +198,11 @@ function Rides() {
           <p className="section-subtitle">Epic journeys we've conquered together</p>
         </div>
         <div className="rides-grid">
-          {rides.map((ride) => (
+          {[...rides].sort((a, b) => {
+            const dateA = new Date(a.date);
+            const dateB = new Date(b.date);
+            return dateB - dateA;
+          }).map((ride) => (
             <div key={ride.id} className={`ride-card ${ride.featured ? 'featured' : ''}`}>
               <div className="ride-image" style={ride.image ? { backgroundImage: `url(${ride.image})`, backgroundSize: 'cover', backgroundPosition: 'bottom' } : {}}>
                 {!ride.image && <div className="ride-image-placeholder">🏔️</div>}
@@ -210,8 +219,14 @@ function Rides() {
                 </div>
                 <p className="ride-description">{ride.description}</p>
                 <div className="ride-stats">
-                  <div className="ride-stat"><strong>{ride.distance}</strong> Distance</div>
-                  <div className="ride-stat"><strong>{ride.duration}</strong></div>
+                  <div className="ride-stat">
+                    <strong>{ride.distance}</strong> 
+                    {/* Only show the "Distance" label if it's a number/km value */}
+                    {ride.distance.toLowerCase().includes('ride') ? '' : ' Distance'}
+                  </div>
+                  <div className="ride-stat">
+                    <strong>{ride.duration}</strong>
+                  </div>
                 </div>
               </div>
             </div>
