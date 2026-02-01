@@ -68,7 +68,7 @@ export const members = [
     name: "Samir Bhujel",
     role: "Secretary",
     bike: "Hero Xpulse 200 4V",
-    photo: "/members/samir-bhujel.jpg",
+    photo: "/members/samir-bhujel.avif",
     quote: "Every ride is a new story waiting to be told.",
     featured: true
   },
@@ -131,7 +131,7 @@ export const members = [
     name: "Abhijeet Yonzon",
     role: "Tech Lead",
     bike: "Royal Enfield Himalayan 411",
-    photo: "/members/abhijeet-yonzon.jpg",
+    photo: "/members/abhijeet-yonzon.avif",
     quote: "Mountains call, and I must ride.",
     featured: false
   },
@@ -140,7 +140,7 @@ export const members = [
     name: "Dewan Chettri",
     role: "Tech Lead",
     bike: "Bajaj Dominar 400",
-    photo: "/members/dewan-chettri.jpg",
+    photo: "/members/dewan-chettri.avif",
     quote: "Brotherhood first, everything else follows.",
     featured: false
   },
@@ -195,7 +195,7 @@ export const members = [
     name: "Jason Lepcha",
     role: "Member",
     bike: "TVS Apache RR 310",
-    photo: "/members/jason-lepcha.jpg",
+    photo: "/members/jason-lepcha.avif",
     quote: "Adventure awaits around every bend.",
     featured: false
   },
