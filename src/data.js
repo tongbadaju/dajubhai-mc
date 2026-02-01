@@ -33,11 +33,11 @@ export const rides = [
     title: "The Zig-Zag",
     date: "October 2024",
     location: "East Sikkim",
-    distance: "267 km",
+    distance: "268 km",
     duration: "2 Days",
-    description: "A breathtaking ascent from Namchi to the mystical Tsomgo Lake, climbing higher to Kupup and the rugged Gnathang Valley. We carved our way through the legendary Dzuluk loops—a ride that chased the clouds along the Old Silk Route.",
+    description: "A breathtaking ascent from Namchi to the mystical Tsongmo Lake, climbing higher to Kupup and the rugged Gnathang Valley. We carved our way through the legendary Dzuluk loops—a ride that chased the clouds along the Old Silk Route.",
     image: "/gallery/8.avif",
-    featured: false
+    featured: true
   },
   {
     "id": 3,
@@ -113,7 +113,7 @@ export const members = [
     name: "Uttam Sharma",
     role: "Community Manager",
     bike: "Yezdi Adventure",
-    photo: "/members/uttam-sharma.jpg",
+    photo: "/members/uttam-sharma.avif",
     quote: "No rider left behind.",
     featured: true
   },
