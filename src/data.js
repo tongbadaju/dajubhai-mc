@@ -222,7 +222,7 @@ export const members = [
     name: "Anuj Rai",
     role: "Member",
     bike: "Yezdi Adventure",
-    photo: "/members/anuj-rai.jpg",
+    photo: "/members/anuj-rai.avif",
     quote: "Riding with brothers, chasing horizons.",
     featured: false
   },
