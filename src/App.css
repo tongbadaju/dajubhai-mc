@@ -121,8 +121,17 @@
   inset: 0;
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
-  background-size: cover;
-  background-position: bottom;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .hero-slide.active {
@@ -441,11 +450,25 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden; /* Added to keep the physical image inside the rounded corners */
+}
+
+.ride-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  z-index: 1;
 }
 
 .ride-image-placeholder {
   font-size: 3rem;
   opacity: 0.5;
+  position: relative;
+  z-index: 2;
 }
 
 .ride-badge {
@@ -460,6 +483,7 @@
   padding: 4px 12px;
   border-radius: var(--radius-sm);
   text-transform: uppercase;
+  z-index: 3; /* Added to ensure it stays on top of the new image */
 }
 
 .ride-content {
@@ -550,6 +574,23 @@
   justify-content: center;
   font-size: 4rem;
   position: relative;
+  overflow: hidden;
+}
+
+.member-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.member-placeholder {
+  position: relative;
+  z-index: 2;
 }
 
 .member-designation-badge {
@@ -565,6 +606,7 @@
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  z-index: 3;
 }
 
 .member-info {

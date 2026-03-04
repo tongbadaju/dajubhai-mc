@@ -74,8 +74,14 @@ function Hero() {
           <div
             key={slide.id}
             className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${slide.image})` }}
           >
+            {/* Added standard HTML img tag for Googlebot to index */}
+            <img 
+              src={slide.image} 
+              alt={slide.caption || "Daju Bhai MC Sikkim"} 
+              className="hero-bg-img" 
+            />
+            
             <div className="slide-overlay"></div>
             {slide.caption && (
               <div className="slide-caption">
@@ -220,8 +226,16 @@ function Rides() {
             return dateB - dateA;
           }).map((ride) => (
             <div key={ride.id} className={`ride-card ${ride.featured ? 'featured' : ''}`}>
-              <div className="ride-image" style={ride.image ? { backgroundImage: `url(${ride.image})`, backgroundSize: 'cover', backgroundPosition: 'bottom' } : {}}>
-                {!ride.image && <div className="ride-image-placeholder">🏔️</div>}
+              <div className="ride-image">
+                {ride.image ? (
+                  <img 
+                    src={ride.image} 
+                    alt={`${ride.title} - ${ride.location}`} 
+                    className="ride-bg-img" 
+                  />
+                ) : (
+                  <div className="ride-image-placeholder">🏔️</div>
+                )}
                 {ride.featured && <span className="ride-badge">Featured</span>}
               </div>
               <div className="ride-content">
@@ -237,7 +251,6 @@ function Rides() {
                 <div className="ride-stats">
                   <div className="ride-stat">
                     <strong>{ride.distance}</strong> 
-                    {/* Only show the "Distance" label if it's a number/km value */}
                     {ride.distance.toLowerCase().includes('ride') ? '' : ' Distance'}
                   </div>
                   <div className="ride-stat">
@@ -267,8 +280,16 @@ function MembersPreview() {
         <div className="members-grid">
           {featuredMembers.map((member) => (
             <div key={member.id} className="member-card">
-              <div className="member-photo" style={member.photo ? { backgroundImage: `url(${member.photo})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
-                {!member.photo && '👤'}
+              <div className="member-photo">
+                {member.photo ? (
+                  <img 
+                    src={member.photo} 
+                    alt={`${member.name} - ${member.role} of Daju Bhai MC`} 
+                    className="member-bg-img" 
+                  />
+                ) : (
+                  <span className="member-placeholder">👤</span>
+                )}
                 <div className="member-designation-badge">{member.role}</div>
               </div>
               <div className="member-info">
