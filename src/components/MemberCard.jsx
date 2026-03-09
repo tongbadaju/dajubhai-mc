@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // Bike icon
 const BikeIcon = () => (
@@ -28,9 +29,10 @@ export default function MemberCard({ member, index = 0 }) {
   const [isFlipped, setIsFlipped] = useState(false)
 
   return (
-    <div 
+    <Link
+      to={`/members/${member.slug}`}
       className={`member-profile-card ${member.featured ? 'is-leadership' : ''}`}
-      style={{ animationDelay: `${index * 0.04}s` }}
+      style={{ animationDelay: `${index * 0.04}s`, textDecoration: 'none' }}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
     >
@@ -78,6 +80,6 @@ export default function MemberCard({ member, index = 0 }) {
           )}
         </div>
       </div>
-    </div>
+    </Link>
   )
 }

@@ -5,6 +5,7 @@ import { clubInfo } from './data'
 import HomePage from './pages/HomePage'
 import MembersPage from './pages/MembersPage'
 import RulebookPage from './pages/RulebookPage'
+import MemberProfilePage from './pages/MemberProfilePage'
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -83,7 +84,7 @@ function Footer() {
         </div>
         <p className="footer-copy">
           © {new Date().getFullYear()} {clubInfo.fullName}. All rights reserved. 
-          <span>Ride with pride.</span>
+          <span> Ride with pride.</span>
         </p>
       </div>
     </footer>
@@ -110,6 +111,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/members" element={<MembersPage />} />
+          <Route path="/members/:slug" element={<MemberProfilePage />} />
           <Route path="/rulebook" element={<RulebookPage />} />
         </Routes>
       </Layout>
