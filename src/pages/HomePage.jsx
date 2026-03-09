@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { clubInfo, socialLinks, rides, members, rules, gallery, stats, contactInfo, heroSlides } from '../data'
+import MemberCard from '../components/MemberCard'
 
 // Icons
 const MapPin = () => (
@@ -268,7 +269,7 @@ function Rides() {
 
 // Members Preview Component (for homepage)
 function MembersPreview() {
-  const featuredMembers = members.filter(m => m.featured).slice(0, 3)
+  const featuredMembers = members.filter(m => m.featured).slice(0, 4)
   
   return (
     <section className="members section" id="members">
@@ -277,30 +278,9 @@ function MembersPreview() {
           <h2 className="section-title">Our Brotherhood</h2>
           <p className="section-subtitle">Meet the leadership team</p>
         </div>
-        <div className="members-grid">
-          {featuredMembers.map((member) => (
-            <div key={member.id} className="member-card">
-              <div className="member-photo">
-                {member.photo ? (
-                  <img 
-                    src={member.photo} 
-                    alt={`${member.name} - ${member.role} of Daju Bhai MC`} 
-                    className="member-bg-img" 
-                  />
-                ) : (
-                  <span className="member-placeholder">👤</span>
-                )}
-                <div className="member-designation-badge">{member.role}</div>
-              </div>
-              <div className="member-info">
-                <h4 className="member-name">{member.name}</h4>
-                {member.bike && (
-                  <div className="member-bike">
-                    {member.bike}
-                  </div>
-                )}
-              </div>
-            </div>
+        <div className="members-page-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 'var(--space-md)' }}>
+          {featuredMembers.map((member, index) => (
+            <MemberCard key={member.id} member={member} index={index} />
           ))}
         </div>
         <div className="section-cta">

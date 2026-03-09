@@ -30,6 +30,7 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+
   const navLinks = isHome ? [
     { href: '#about', label: 'About' },
     { href: '#gallery', label: 'Gallery' },

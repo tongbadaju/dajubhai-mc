@@ -1,35 +1,7 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { members } from '../data'
-
-function MemberCard({ member, index }) {
-  return (
-    <div 
-      key={member.id} 
-      className={`member-card-full ${member.featured ? 'leadership' : ''}`}
-      style={{ animationDelay: `${index * 0.05}s` }}
-    >
-      <div className="member-photo-large" style={member.photo ? { backgroundImage: `url(${member.photo})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
-        {!member.photo && '👤'}
-        <div className="member-designation-badge">{member.role}</div>
-      </div>
-      <div className="member-info-full">
-        <h3 className="member-name">{member.name}</h3>
-        
-        {member.bike && (
-          <div className="member-details">
-            <div className="member-detail">
-              <span className="detail-label">Ride</span>
-              <span className="detail-value">{member.bike}</span>
-            </div>
-          </div>
-        )}
-        
-        {member.quote && <p className="member-quote-full">"{member.quote}"</p>}
-      </div>
-    </div>
-  )
-}
+import MemberCard from '../components/MemberCard'
 
 function MembersPage() {
   const [filter, setFilter] = useState('all')

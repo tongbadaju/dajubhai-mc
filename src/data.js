@@ -233,7 +233,7 @@ export const members = [
     name: "Sudhir Chettri",
     role: "Advisor",
     bike: null,
-    photo: "/members/sudhir-chettri.jpg",
+    photo: null,
     featured: false
   },
   {
@@ -241,7 +241,7 @@ export const members = [
     name: "Andrew Lepcha",
     role: "Advisor",
     bike: null,
-    photo: "/members/andrew-lepcha.jpg",
+    photo: null,
     featured: false
   },
   {
@@ -249,7 +249,7 @@ export const members = [
     name: "Mahesh Pradhan",
     role: "Advisor",
     bike: null,
-    photo: "/members/mahesh-pradhan.jpg",
+    photo: null,
     featured: false
   }
 ];
@@ -372,9 +372,7 @@ export const gallery = [
   "/gallery/7.avif",
   "/gallery/8.avif",
   "/gallery/9.avif",
-  "/gallery/10.avif",
-  "/gallery/11.avif",
-  "/gallery/12.avif"
+  "/gallery/10.avif"
 ];
 
 export const stats = [
