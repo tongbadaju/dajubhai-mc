@@ -123,7 +123,9 @@ export const members = [
     photo: "/members/tushar-rai/dp.avif",
     coverPhoto: "/members/tushar-rai/cover.avif",
     bikePhoto: "/members/tushar-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/tongbadaju"
+    },
     quote: "Bujhyo ni?",
     featured: true
   },
@@ -333,9 +335,9 @@ export const members = [
     role: "Advisor",
     bike: null,
     bikeNumber: null,
-    photo: "/members/sudhir-chettri/dp.avif",
-    coverPhoto: "/members/sudhir-chettri/cover.avif",
-    bikePhoto: "/members/sudhir-chettri/bike.avif",
+    photo: null,
+    coverPhoto: null,
+    bikePhoto: null,
     socialLinks: {},
     featured: false
   },
@@ -346,9 +348,9 @@ export const members = [
     role: "Advisor",
     bike: null,
     bikeNumber: null,
-    photo: "/members/andrew-lepcha/dp.avif",
-    coverPhoto: "/members/andrew-lepcha/cover.avif",
-    bikePhoto: "/members/andrew-lepcha/bike.avif",
+    photo: null,
+    coverPhoto: null,
+    bikePhoto: null,
     socialLinks: {},
     featured: false
   },
@@ -359,9 +361,9 @@ export const members = [
     role: "Advisor",
     bike: null,
     bikeNumber: null,
-    photo: "/members/mahesh-pradhan/dp.avif",
-    coverPhoto: "/members/mahesh-pradhan/cover.avif",
-    bikePhoto: "/members/mahesh-pradhan/bike.avif",
+    photo: null,
+    coverPhoto: null,
+    bikePhoto: null,
     socialLinks: {},
     featured: false
   }

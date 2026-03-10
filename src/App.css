@@ -1451,6 +1451,7 @@
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
   border-color: rgba(229, 45, 39, 0.15);
+  cursor: pointer !important;
 }
 
 .member-profile-card.is-leadership {
