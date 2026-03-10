@@ -1,20 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://dajubhaimc.in/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>https://dajubhaimc.in/members</loc>
-    <lastmod>2026-03-04</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://dajubhaimc.in/rulebook</loc>
-    <lastmod>2026-03-04</lastmod>
-    <priority>0.8</priority>
-  </url>
-</urlset>
+User-agent: *
+Allow: /
+
+Sitemap: https://dajubhaimc.in/sitemap.xml

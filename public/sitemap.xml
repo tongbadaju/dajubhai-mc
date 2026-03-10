@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
   <url>
     <loc>https://dajubhaimc.in/</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://dajubhaimc.in/members</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dajubhaimc.in/rulebook</loc>
+    <lastmod>2026-03-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Member Profiles -->
+  <url><loc>https://dajubhaimc.in/members/premanand-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/samir-bhujel</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/sahil-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/niten-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/tushar-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/anmol-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/uttam-sharma</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/swadhin-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/abhijeet-yonzon</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/dewan-chettri</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/dishant-pradhan</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/jeevesh-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/welson-gurung</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/wangdi-lepcha</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/tashi-bhutia</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/jason-lepcha</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/sumiran-pradhan</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/adarsh-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/anuj-rai</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/sudhir-chettri</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/andrew-lepcha</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://dajubhaimc.in/members/mahesh-pradhan</loc><lastmod>2026-03-10</lastmod><priority>0.6</priority></url>
 </urlset>
