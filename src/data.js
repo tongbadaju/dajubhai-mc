@@ -65,8 +65,7 @@ export const members = [
     coverPhoto: "/members/premanand-rai/cover.avif",
     bikePhoto: "/members/premanand-rai/bike.avif",
     socialLinks: {
-      instagram: "https://instagram.com/premanand",
-      facebook: "https://facebook.com/premanand"
+      instagram: "https://instagram.com/__anan.14",
     },
     quote: "The road is my teacher, the bike is my companion.",
     featured: true
@@ -81,7 +80,9 @@ export const members = [
     photo: "/members/samir-bhujel/dp.avif",
     coverPhoto: "/members/samir-bhujel/cover.avif",
     bikePhoto: "/members/samir-bhujel/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/samir_bhujel09",
+    },
     quote: "Every ride is a new story waiting to be told.",
     featured: true
   },
@@ -95,7 +96,9 @@ export const members = [
     photo: "/members/sahil-rai/dp.avif",
     coverPhoto: "/members/sahil-rai/cover.avif",
     bikePhoto: "/members/sahil-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/r__sahil",
+    },
     quote: "I don't need GPS, I follow my instincts.",
     featured: true
   },
@@ -109,7 +112,9 @@ export const members = [
     photo: "/members/niten-rai/dp.avif",
     coverPhoto: "/members/niten-rai/cover.avif",
     bikePhoto: "/members/niten-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/sekwabubu",
+    },
     quote: "Riding is an investment in happiness.",
     featured: true
   },
@@ -139,7 +144,9 @@ export const members = [
     photo: "/members/anmol-rai/dp.avif",
     coverPhoto: "/members/anmol-rai/cover.avif",
     bikePhoto: "/members/anmol-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/wachipa_",
+    },
     quote: "Small displacement, massive torque.",
     featured: true
   },
@@ -153,7 +160,9 @@ export const members = [
     photo: "/members/uttam-sharma/dp.avif",
     coverPhoto: "/members/uttam-sharma/cover.avif",
     bikePhoto: "/members/uttam-sharma/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/uttaamsharmadhakal",
+    },
     quote: "No rider left behind.",
     featured: true
   },
@@ -167,7 +176,9 @@ export const members = [
     photo: "/members/swadhin-rai/dp.avif",
     coverPhoto: "/members/swadhin-rai/cover.avif",
     bikePhoto: "/members/swadhin-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/scerworn_15",
+    },
     quote: "Safety first, adventure always.",
     featured: true
   },
@@ -181,7 +192,9 @@ export const members = [
     photo: "/members/abhijeet-yonzon/dp.avif",
     coverPhoto: "/members/abhijeet-yonzon/cover.avif",
     bikePhoto: "/members/abhijeet-yonzon/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/ig_yonzon_07",
+    },
     quote: "Mountains call, and I must ride.",
     featured: false
   },
@@ -195,7 +208,9 @@ export const members = [
     photo: "/members/dewan-chettri/dp.avif",
     coverPhoto: "/members/dewan-chettri/cover.avif",
     bikePhoto: "/members/dewan-chettri/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/dewanchettri",
+    },
     quote: "Brotherhood first, everything else follows.",
     featured: false
   },
@@ -210,7 +225,9 @@ export const members = [
     photo: "/members/dishant-pradhan/dp.avif",
     coverPhoto: "/members/dishant-pradhan/cover.avif",
     bikePhoto: "/members/dishant-pradhan/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/dishantzy",
+    },
     quote: "The road less traveled is where legends are made.",
     featured: false
   },
@@ -224,7 +241,9 @@ export const members = [
     photo: "/members/jeevesh-rai/dp.avif",
     coverPhoto: "/members/jeevesh-rai/cover.avif",
     bikePhoto: "/members/jeevesh-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/jee_p_esh07",
+    },
     quote: "Every ride is a chance to find yourself.",
     featured: false
   },
@@ -238,7 +257,9 @@ export const members = [
     photo: "/members/welson-gurung/dp.avif",
     coverPhoto: "/members/welson-gurung/cover.avif",
     bikePhoto: "/members/welson-gurung/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/w.e.l.s.o.n.97",
+    },
     quote: "Life begins where the road curves.",
     featured: false
   },
@@ -252,7 +273,9 @@ export const members = [
     photo: "/members/wangdi-lepcha/dp.avif",
     coverPhoto: "/members/wangdi-lepcha/cover.avif",
     bikePhoto: "/members/wangdi-lepcha/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/wanns.l_",
+    },
     quote: "Speed is temporary, the thrill is forever.",
     featured: false
   },
@@ -266,7 +289,9 @@ export const members = [
     photo: "/members/tashi-bhutia/dp.avif",
     coverPhoto: "/members/tashi-bhutia/cover.avif",
     bikePhoto: "/members/tashi-bhutia/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/waraioni_13",
+    },
     quote: "Ride together, stay together.",
     featured: false
   },
@@ -280,7 +305,9 @@ export const members = [
     photo: "/members/jason-lepcha/dp.avif",
     coverPhoto: "/members/jason-lepcha/cover.avif",
     bikePhoto: "/members/jason-lepcha/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/ja9o.n",
+    },
     quote: "Adventure awaits around every bend.",
     featured: false
   },
@@ -294,7 +321,9 @@ export const members = [
     photo: "/members/sumiran-pradhan/dp.avif",
     coverPhoto: "/members/sumiran-pradhan/cover.avif",
     bikePhoto: "/members/sumiran-pradhan/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/hoo.oman_",
+    },
     quote: "Jum ride!",
     featured: false
   },
@@ -308,7 +337,9 @@ export const members = [
     photo: "/members/adarsh-rai/dp.avif",
     coverPhoto: "/members/adarsh-rai/cover.avif",
     bikePhoto: "/members/adarsh-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/adarsh_as_always",
+    },
     quote: "The journey matters more than the destination.",
     featured: false
   },
@@ -322,7 +353,9 @@ export const members = [
     photo: "/members/anuj-rai/dp.avif",
     coverPhoto: "/members/anuj-rai/cover.avif",
     bikePhoto: "/members/anuj-rai/bike.avif",
-    socialLinks: {},
+    socialLinks: {
+      instagram: "https://instagram.com/anujj_raiii",
+    },
     quote: "Riding with brothers, chasing horizons.",
     featured: false
   },
