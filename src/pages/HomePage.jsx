@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { clubInfo, socialLinks, rides, members, rules, gallery, stats, contactInfo, heroSlides } from '../data'
+import { clubInfo, socialLinks, rides, upcomingRide, members, rules, gallery, stats, contactInfo, heroSlides } from '../data'
 import MemberCard from '../components/MemberCard'
 
 // Icons
@@ -195,6 +195,51 @@ function Gallery() {
 }
 
 
+// Upcoming Ride Component
+function UpcomingRide() {
+  if (!upcomingRide) return null;
+
+  return (
+    <section className="section upcoming-ride-section" id="upcoming-ride">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">Upcoming Ride</h2>
+          <p className="section-subtitle">Gear up for our next adventure</p>
+        </div>
+        <div className="upcoming-ride-card">
+          <div className="upcoming-ride-image">
+             {upcomingRide.image ? (
+               <img src={upcomingRide.image} alt={upcomingRide.title} />
+             ) : (
+               <div className="upcoming-ride-placeholder">🏔️</div>
+             )}
+             <div className="upcoming-badge">Planned Route</div>
+          </div>
+          <div className="upcoming-ride-content">
+            <h3 className="upcoming-ride-title">{upcomingRide.title}</h3>
+            <div className="upcoming-ride-meta">
+              <span className="upcoming-ride-date">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                {upcomingRide.date}
+              </span>
+              <span className="upcoming-ride-location">
+                <MapPin />
+                {upcomingRide.location}
+              </span>
+            </div>
+            <p className="upcoming-ride-desc">{upcomingRide.description}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 // Helper function to parse "Month Year" format
 function parseMonthYear(dateString) {
   const months = {
@@ -278,7 +323,7 @@ function MembersPreview() {
           <h2 className="section-title">Our Brotherhood</h2>
           <p className="section-subtitle">Meet the leadership team</p>
         </div>
-        <div className="members-page-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 'var(--space-md)' }}>
+        <div className="members-page-grid">
           {featuredMembers.map((member, index) => (
             <MemberCard key={member.id} member={member} index={index} />
           ))}
@@ -377,6 +422,7 @@ function HomePage() {
       <Stats />
       <About />
       <Gallery />
+      <UpcomingRide />
       <Rides />
       <MembersPreview />
       <RulebookPreview />

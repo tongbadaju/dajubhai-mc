@@ -52,6 +52,14 @@ export const rides = [
   },
 ];
 
+export const upcomingRide = {
+  title: "West Sikkim Expedition",
+  date: "April 2026",
+  location: "West Sikkim",
+  description: "Our next planned brotherhood ride capturing the beauty of West Sikkim. Dates are tentative and will be finalized soon.",
+  image: "/gallery/west-sk.jpg"
+};
+
 export const members = [
   // Leadership
   {
@@ -62,7 +70,7 @@ export const members = [
     bike: "Royal Enfield Himalayan 450",
     bikeNumber: null,
     photo: "/members/premanand-rai/dp.avif",
-    coverPhoto: "/members/premanand-rai/cover.avif",
+    coverPhoto: null,
     bikePhoto: "/members/premanand-rai/bike.avif",
     socialLinks: {
       instagram: "https://instagram.com/__anan.14",
@@ -78,8 +86,8 @@ export const members = [
     bike: "Hero Xpulse 200 4V",
     bikeNumber: null,
     photo: "/members/samir-bhujel/dp.avif",
-    coverPhoto: "/members/samir-bhujel/cover.avif",
-    bikePhoto: "/members/samir-bhujel/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/xpulse.avif",
     socialLinks: {
       instagram: "https://instagram.com/samir_bhujel09",
     },
@@ -94,8 +102,8 @@ export const members = [
     bike: "Yamaha MT-15",
     bikeNumber: null,
     photo: "/members/sahil-rai/dp.avif",
-    coverPhoto: "/members/sahil-rai/cover.avif",
-    bikePhoto: "/members/sahil-rai/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/mt15.avif",
     socialLinks: {
       instagram: "https://instagram.com/r__sahil",
     },
@@ -110,8 +118,8 @@ export const members = [
     bike: "Royal Enfield Hunter 350",
     bikeNumber: null,
     photo: "/members/niten-rai/dp.avif",
-    coverPhoto: "/members/niten-rai/cover.avif",
-    bikePhoto: "/members/niten-rai/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/hunter-gray.avif",
     socialLinks: {
       instagram: "https://instagram.com/sekwabubu",
     },
@@ -142,8 +150,8 @@ export const members = [
     bike: "Royal Enfield Hunter 350",
     bikeNumber: null,
     photo: "/members/anmol-rai/dp.avif",
-    coverPhoto: "/members/anmol-rai/cover.avif",
-    bikePhoto: "/members/anmol-rai/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/hunter-blue.avif",
     socialLinks: {
       instagram: "https://instagram.com/wachipa_",
     },
@@ -158,8 +166,8 @@ export const members = [
     bike: "Yezdi Adventure",
     bikeNumber: null,
     photo: "/members/uttam-sharma/dp.avif",
-    coverPhoto: "/members/uttam-sharma/cover.avif",
-    bikePhoto: "/members/uttam-sharma/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/yezdiadv.avif",
     socialLinks: {
       instagram: "https://instagram.com/uttaamsharmadhakal",
     },
@@ -174,8 +182,7 @@ export const members = [
     bike: null,
     bikeNumber: null,
     photo: "/members/swadhin-rai/dp.avif",
-    coverPhoto: "/members/swadhin-rai/cover.avif",
-    bikePhoto: "/members/swadhin-rai/bike.avif",
+    coverPhoto: null,
     socialLinks: {
       instagram: "https://instagram.com/scerworn_15",
     },
@@ -190,8 +197,8 @@ export const members = [
     bike: "Royal Enfield Himalayan 411",
     bikeNumber: null,
     photo: "/members/abhijeet-yonzon/dp.avif",
-    coverPhoto: "/members/abhijeet-yonzon/cover.avif",
-    bikePhoto: "/members/abhijeet-yonzon/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/himalayan-green.avif",
     socialLinks: {
       instagram: "https://instagram.com/ig_yonzon_07",
     },
@@ -206,8 +213,8 @@ export const members = [
     bike: "Bajaj Dominar 400",
     bikeNumber: null,
     photo: "/members/dewan-chettri/dp.avif",
-    coverPhoto: "/members/dewan-chettri/cover.avif",
-    bikePhoto: "/members/dewan-chettri/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/dominar.avif",
     socialLinks: {
       instagram: "https://instagram.com/dewanchettri",
     },
@@ -223,8 +230,8 @@ export const members = [
     bike: "Husqvarna Svartpilen 250",
     bikeNumber: null,
     photo: "/members/dishant-pradhan/dp.avif",
-    coverPhoto: "/members/dishant-pradhan/cover.avif",
-    bikePhoto: "/members/dishant-pradhan/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/svartpilen.avif",
     socialLinks: {
       instagram: "https://instagram.com/dishantzy",
     },
@@ -239,8 +246,8 @@ export const members = [
     bike: "Royal Enfield Hunter 350",
     bikeNumber: null,
     photo: "/members/jeevesh-rai/dp.avif",
-    coverPhoto: "/members/jeevesh-rai/cover.avif",
-    bikePhoto: "/members/jeevesh-rai/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/hunter-black.avif",
     socialLinks: {
       instagram: "https://instagram.com/jee_p_esh07",
     },
@@ -255,8 +262,8 @@ export const members = [
     bike: "Royal Enfield Himalayan 411",
     bikeNumber: null,
     photo: "/members/welson-gurung/dp.avif",
-    coverPhoto: "/members/welson-gurung/cover.avif",
-    bikePhoto: "/members/welson-gurung/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/himalayan-blue.avif",
     socialLinks: {
       instagram: "https://instagram.com/w.e.l.s.o.n.97",
     },
@@ -271,8 +278,8 @@ export const members = [
     bike: "Yamaha R15M",
     bikeNumber: null,
     photo: "/members/wangdi-lepcha/dp.avif",
-    coverPhoto: "/members/wangdi-lepcha/cover.avif",
-    bikePhoto: "/members/wangdi-lepcha/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/r15m.avif",
     socialLinks: {
       instagram: "https://instagram.com/wanns.l_",
     },
@@ -287,8 +294,8 @@ export const members = [
     bike: "Royal Enfield Hunter 350",
     bikeNumber: null,
     photo: "/members/tashi-bhutia/dp.avif",
-    coverPhoto: "/members/tashi-bhutia/cover.avif",
-    bikePhoto: "/members/tashi-bhutia/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/hunter-black.avif",
     socialLinks: {
       instagram: "https://instagram.com/waraioni_13",
     },
@@ -303,8 +310,8 @@ export const members = [
     bike: "TVS Apache RR 310",
     bikeNumber: null,
     photo: "/members/jason-lepcha/dp.avif",
-    coverPhoto: "/members/jason-lepcha/cover.avif",
-    bikePhoto: "/members/jason-lepcha/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/rr310.avif",
     socialLinks: {
       instagram: "https://instagram.com/ja9o.n",
     },
@@ -319,8 +326,8 @@ export const members = [
     bike: "Royal Enfield Guerrilla 450",
     bikeNumber: null,
     photo: "/members/sumiran-pradhan/dp.avif",
-    coverPhoto: "/members/sumiran-pradhan/cover.avif",
-    bikePhoto: "/members/sumiran-pradhan/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/guerrilla.avif",
     socialLinks: {
       instagram: "https://instagram.com/hoo.oman_",
     },
@@ -335,8 +342,7 @@ export const members = [
     bike: null,
     bikeNumber: null,
     photo: "/members/adarsh-rai/dp.avif",
-    coverPhoto: "/members/adarsh-rai/cover.avif",
-    bikePhoto: "/members/adarsh-rai/bike.avif",
+    coverPhoto: null,
     socialLinks: {
       instagram: "https://instagram.com/adarsh_as_always",
     },
@@ -351,8 +357,8 @@ export const members = [
     bike: "Yezdi Adventure",
     bikeNumber: null,
     photo: "/members/anuj-rai/dp.avif",
-    coverPhoto: "/members/anuj-rai/cover.avif",
-    bikePhoto: "/members/anuj-rai/bike.avif",
+    coverPhoto: null,
+    bikePhoto: "/bikes/yezdiadv.avif",
     socialLinks: {
       instagram: "https://instagram.com/anujj_raiii",
     },
@@ -544,7 +550,7 @@ export const heroSlides = [
   },
   {
     id: 2,
-    image: "/gallery/12.avif",
+    image: "/gallery/4.avif",
     caption: "Chasing Horizons — Finding Freedom"
   },
   {
@@ -554,7 +560,7 @@ export const heroSlides = [
   },
   {
     id: 4,
-    image: "/gallery/2.avif",
+    image: "/gallery/6.avif",
     caption: "The Journey Continues"
   },
   {

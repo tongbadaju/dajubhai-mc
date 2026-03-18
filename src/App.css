@@ -1856,6 +1856,146 @@
   background-clip: text;
 }
 
+/* --- Upcoming Ride Section --- */
+.upcoming-ride-section {
+  position: relative;
+  background: var(--dark-gray);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.upcoming-ride-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: rgba(9, 9, 11, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 900px) {
+  .upcoming-ride-card {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+.upcoming-ride-image {
+  position: relative;
+  min-height: 250px;
+  background: linear-gradient(135deg, rgba(255, 61, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+@media (min-width: 900px) {
+  .upcoming-ride-image {
+    min-height: 100%;
+  }
+}
+
+.upcoming-ride-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.upcoming-ride-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  opacity: 0.3;
+}
+
+.upcoming-badge {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: var(--flame-red);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 12px rgba(255, 61, 0, 0.3);
+  z-index: 2;
+}
+
+.upcoming-ride-content {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .upcoming-ride-content {
+    padding: var(--space-xl);
+  }
+}
+
+.upcoming-ride-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: var(--white);
+  margin-bottom: var(--space-md);
+}
+
+.upcoming-ride-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.upcoming-ride-date,
+.upcoming-ride-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--flame-red);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(255, 61, 0, 0.08);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 61, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .upcoming-ride-date,
+  .upcoming-ride-location {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+}
+
+.upcoming-ride-date svg,
+.upcoming-ride-location svg {
+  stroke: var(--flame-red);
+}
+
+.upcoming-ride-desc {
+  color: var(--silver);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .upcoming-ride-desc {
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+}
 .sidebar-stat .stat-label {
   color: var(--muted);
   font-size: 0.82rem;
@@ -2161,11 +2301,10 @@
 
 .mp-social-btn:hover {
   background: var(--flame-red);
-  border-color: var(--flame-red);
-  color: var(--white);
-  transform: translateY(-2px);
+  margin-bottom: var(--space-lg);
 }
 
+/* --- Existing Rides Section --- */
 /* Details Section */
 .mp-details-section {
   background: var(--charcoal);
@@ -2617,7 +2756,8 @@
   }
   
   .members-page-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
   }
   
   .filter-tabs {
@@ -2642,7 +2782,42 @@
   }
   
   .member-name {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .profile-name {
+    font-size: 0.85rem;
+  }
+
+  .profile-role-badge {
+    font-size: 0.5rem;
+    padding: 2px 8px;
+  }
+
+  .profile-name-overlay {
+    padding: var(--space-sm) var(--space-xs);
+  }
+
+  .profile-details-inner {
+    padding: var(--space-sm);
+  }
+
+  .profile-details-name {
+    font-size: 0.95rem;
+  }
+
+  .profile-details-role {
+    font-size: 0.55rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .profile-bike {
+    padding: 2px 8px;
+    font-size: 0.65rem;
+  }
+
+  .profile-quote p {
+    font-size: 0.68rem;
   }
   
   .member-quote-full {
@@ -2696,9 +2871,7 @@
     position: static;
   }
 
-  .mp-main-photo {
-    aspect-ratio: 4 / 3;
-  }
+
 
   .mp-info-card {
     padding: var(--space-md);
