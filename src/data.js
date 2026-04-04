@@ -54,7 +54,7 @@ export const rides = [
 
 export const upcomingRide = {
   title: "West Sikkim Expedition",
-  date: "April 2026",
+  date: "14-15 April 2026",
   location: "West Sikkim",
   description: "Our next planned brotherhood ride capturing the beauty of West Sikkim. Dates are tentative and will be finalized soon.",
   image: "/gallery/west-sk.jpg"
