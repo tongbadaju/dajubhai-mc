@@ -269,9 +269,8 @@ export default function MemberProfilePage() {
                 <div className="mp-ride-card-info">
                   <h3 className="mp-ride-bike-name">{member.bike}</h3>
                   {member.bikeNumber && (
-                    <div className="mp-ride-plate">
-                      <span className="mp-ride-plate-label">Registration</span>
-                      <span className="mp-ride-plate-number">{member.bikeNumber}</span>
+                    <div style={{ marginTop: '0.75rem', fontSize: '1.3rem'}}>
+                      <span style={{ color: 'var(--white)', fontWeight: '500', fontFamily: 'monospace' }}>{member.bikeNumber}</span>
                     </div>
                   )}
                 </div>

@@ -2663,54 +2663,6 @@
   background-clip: text;
 }
 
-.mp-ride-plate {
-  display: inline-flex;
-  flex-direction: column;
-  background: linear-gradient(145deg, rgba(20, 20, 25, 0.9), rgba(10, 10, 12, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-left: 3px solid var(--flame-red);
-  border-radius: var(--radius-sm);
-  padding: 12px 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  margin-top: var(--space-lg);
-  align-self: flex-start;
-  position: relative;
-  overflow: hidden;
-}
-
-.mp-ride-plate::after {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%; width: 50%; height: 100%;
-  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
-  transform: skewX(-20deg);
-  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mp-ride-card:hover .mp-ride-plate::after {
-  left: 200%;
-}
-
-.mp-ride-plate-label {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  color: var(--silver);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-bottom: 6px;
-  opacity: 0.8;
-}
-
-.mp-ride-plate-number {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
-  font-size: clamp(1.5rem, 3vw, 1.8rem);
-  letter-spacing: 0.15em;
-  color: var(--white);
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-}
 
 /* -------------------- PAGE RESPONSIVE -------------------- */
 

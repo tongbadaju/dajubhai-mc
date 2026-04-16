@@ -50,15 +50,27 @@ export const rides = [
     "image": "/gallery/13.avif",
     "featured": false
   },
+  {
+    "id": 4,
+    "title": "The First Capital Run",
+    "date": "April 2026",
+    "location": "West Sikkim",
+    "distance": "230 km",
+    "duration": "2 Days",
+    "description": "A deep dive into the heart of the West. Exploring the historic trails, this journey was a tribute to the ancient capital and the towering peaks that watch over it.",
+    "image": "/gallery/14.avif",
+    "featured": true
+  }
 ];
 
-export const upcomingRide = {
-  title: "West Sikkim Expedition",
-  date: "14-15 April 2026",
-  location: "West Sikkim",
-  description: "Our next planned brotherhood ride capturing the beauty of West Sikkim. Dates are tentative and will be finalized soon.",
-  image: "/gallery/west-sk.jpg"
-};
+export const upcomingRide = null;
+// export const upcomingRide = {
+//   title: "West Sikkim Expedition",
+//   date: "14-15 April 2026",
+//   location: "West Sikkim",
+//   description: "Our next planned brotherhood ride capturing the beauty of West Sikkim. Dates are tentative and will be finalized soon.",
+//   image: "/gallery/west-sk.jpg"
+// };
 
 export const members = [
   // Leadership
