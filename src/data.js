@@ -82,7 +82,7 @@ export const members = [
     bike: "Royal Enfield Himalayan 450",
     bikeNumber: null,
     photo: "/members/premanand-rai/dp.avif",
-    coverPhoto: null,
+    coverPhoto: "/members/premanand-rai/cover.avif",
     bikePhoto: "/members/premanand-rai/bike.avif",
     socialLinks: {
       instagram: "https://instagram.com/__anan.14",
